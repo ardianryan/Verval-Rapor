@@ -294,9 +294,9 @@
     };
 
     // CSV URLs
-    const SUBJECTS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSk58PezpKmGfOKDnE5GEWhfiO-dAEQt63P9eUmOhDnrS4egaCLnJtjpLNSqddvRFvMwzAOjq-2-eBF/pub?gid=0&single=true&output=csv';
-    const STUDENTS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSk58PezpKmGfOKDnE5GEWhfiO-dAEQt63P9eUmOhDnrS4egaCLnJtjpLNSqddvRFvMwzAOjq-2-eBF/pub?gid=259281753&single=true&output=csv';
-    const VERIFICATION_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSk58PezpKmGfOKDnE5GEWhfiO-dAEQt63P9eUmOhDnrS4egaCLnJtjpLNSqddvRFvMwzAOjq-2-eBF/pub?gid=683646932&single=true&output=csv';
+    const SUBJECTS_URL = 'https://docs.google.com/spreadsheets/d/e/change_with_your_own_sheet_id/pub?gid=0&single=true&output=csv';
+    const STUDENTS_URL = 'https://docs.google.com/spreadsheets/d/e/change_with_your_own_sheet_id/pub?gid=259281753&single=true&output=csv';
+    const VERIFICATION_URL = 'https://docs.google.com/spreadsheets/d/e/change_with_your_own_sheet_id/pub?gid=683646932&single=true&output=csv';
 
     // Parse CSV with proper quote handling
     function parseCSV(csv) {
@@ -993,7 +993,7 @@
         formData.append('lahir', currentStudent.lahir || '');
         formData.append('verifikasi', verifikasi);
 
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwJ1Y_RZWvbdOqRXY2pvkr8xzkz3bHxW2zVrwb5LCNiZvNjfWElqb0fDsRg-_XnEqRd/exec', {
+        const response = await fetch('https://script.google.com/macros/s/change_with_your_own_simple_html_form_apps_script/exec', {
           method: 'POST',
           body: formData,
           mode: 'no-cors'
